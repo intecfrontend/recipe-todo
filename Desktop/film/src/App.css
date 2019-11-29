@@ -1,0 +1,148 @@
+.content {
+    position: fixed;
+    background: rgba (0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html {
+    background: black;
+}
+
+video {
+    min-width: 600px !important;
+    order: red solid 5px;
+}
+
+#root {
+    min-width: 400px;
+    min-height: 400px;
+    color: beige;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-width: 500px
+}
+
+.contentwrapper {
+    min-width: 500px
+}
+
+video {
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+}
+
+#playButton,
+#pauseButton {
+    position: relative;
+    color: grey;
+    border-radius: 3px;
+    font-size: 7px;
+    background: beige;
+    z-index: 20;
+    margin-top: 0.5vw;
+    width: 40px;
+    opacity: 0.4;
+}
+
+#playButton:hover,
+#pauseButton:hover {
+    color: black;
+    cursor: pointer;
+    background: white;
+    opacity: 1;
+}
+
+.titlewrapper {
+    height: 25vh;
+}
+
+.mytitle {
+    width: 100vw;
+    font-size: 3vw;
+    color: beige;
+    position: absolute;
+    margin-left: 4vw;
+    text-align: left;
+
+}
+
+.search-bar {
+    border-radius: 5px 0px 0px 5px;
+    height: 15px;
+    width: 160px
+}
+
+.search-button {
+    border-radius: 0px 5px 5px 0px;
+    height: 20px;
+    z-index: 10;
+    padding: 0;
+    margin-left: 226px;
+    width: 60px;
+    background: gold;
+}
+
+form {
+    position: absolute;
+    z-index: 10;
+}
+
+.inputwrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 25vh;
+    flex-wrap: nowrap;
+}
+
+.search-button:hover {
+    background: white;
+    color: gray;
+}
+
+.Appwrap {
+    display: flex;
+    justify-content: center;
+    margin: 0vw 10vw 10vw 10vw;
+    flex-flow: row wrap;
+}
+
+.recipeimg {
+    margin: 0.5vw;
+    border-radius: 1vw;
+    border: 1px solid black;
+}
+
+.content {
+    position: fixed;
+    background: rgba(0, 0, 0, 0);
+    width: 100vw;
+    height: 25vh;
+}
+
+#myBtn {
+    width: 29px;
+    font-size: 5px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.video {
+    width: 97vw;
+    height: 25vh;
+    z-index: -10;
+    object-fit: cover;
+}
