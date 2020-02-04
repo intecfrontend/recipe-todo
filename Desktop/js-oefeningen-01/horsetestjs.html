@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #myImage {
+            position: absolute;
+            left: 50px;
+            width: calc(100% - 100px);
+            border: 1px solid black;
+            background-color: red;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+        <button onclick="document.getElementById('myImage').src='maxi.png'">horse</button>
+
+        <img id="myImage" src="mini.png" alt="img" style="width:500px">
+
+        <button onclick="document.getElementById('myImage').src='mini.png'">horsy</button>
+    </div>
+
+    <script>
+        if (screen.width < 1200) {
+            console.log(screen.width)
+
+            alert('Less than 1200');
+        } else {
+
+            alert('More than 1200');
+        }
+    </script>
+
+</body>
+
+</html>

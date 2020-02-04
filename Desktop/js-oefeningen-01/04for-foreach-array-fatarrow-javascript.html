@@ -1,0 +1,35 @@
+<div id="demo">Ik ben een plaatshouderdemo</div>
+<script>
+    let namen = ["Benedikt", "Jan", "Piet"];
+
+    document.write("<h2>Naamlijst</h2>");
+
+
+    for (let i = 0; i < namen.length; i++) {
+        document.write(namen[i] + '<br/>');
+    }
+    //bij   i <= namen.length   komt er één undefined achter
+
+
+    // namen.forEach(fun(parameter) naam: string document.write(naam  + '<br/>'); });
+
+    namen.forEach(function (naam) {
+        document.write(naam + ' 2nd opsomming' + '<br/>');
+    });
+
+
+    namen.forEach((naam) => {
+        document.write(naam + ' 3rd opsomming' + '<br/>');
+    });
+
+    var text = "";
+    var i;
+    for (i = 0; i < namen.length; i++) {
+        text += namen[i] + "<br>";
+        console.log(i)
+        console.log(namen)
+        console.log(namen[i])
+    }
+
+    document.getElementById("demo").innerHTML = text;
+</script>

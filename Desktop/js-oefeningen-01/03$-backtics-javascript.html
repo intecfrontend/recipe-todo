@@ -1,0 +1,16 @@
+<div id="demo">Ik ben een plaatshouderdemo</div>
+<script>
+    const naam = "Benedikt"
+    console.log("naam is: " + naam)
+
+    function verteller() {
+
+        return (`inside curlies. It's me ${naam}`);
+    }
+
+    console.log(`It's me 1 ${naam}`) //modern
+    window.alert(`It's me 2 ${naam}`) //modern
+    console.log("It\'s me backslash " + naam) //do not use backtics
+    document.getElementById("demo").innerHTML = verteller();
+    //document.getElementById("demo").innerHTML = vertel;
+</script>

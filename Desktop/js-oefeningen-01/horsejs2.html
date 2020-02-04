@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #myimage {
+            position: absolute;
+            left: 50px;
+            width: calc(100% - 100px);
+            border: 1px solid black;
+            background-color: yellow;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+        <button onclick="document.getElementById('myImage').src='maxi.png'">horse</button>
+
+        <img id="myImage" src="mini.png" style="width:500px">
+
+        <button onclick="document.getElementById('myImage').src='mini.png'">horsy</button>
+    </div>
+
+    <script>
+        console.log("buiten" + window.innerWidth);
+        if (window.innerWidth < 1000) {
+            console.log("binnen curlies" + window.innerWidth);
+            document.getElementById('myImage').src = 'mini.png';
+
+        } else {
+
+            document.getElementById('myImage').src = 'maxi.png';
+        }
+    </script>
+
+</body>
+
+</html>
